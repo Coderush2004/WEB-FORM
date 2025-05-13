@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enhanced Web Form</title>
+</head>
+<body style="background-color: #e0ffff; font-family: Arial, sans-serif; color: #333;">
+
+  <h1 style="text-align: center; background-color: black; color: white; padding: 20px;">
+    Personal Details Form
+  </h1>
+
+  <form action="thankyou.html" method="get" style="background-color: #ffe4e1; padding: 30px; margin: 0 auto; width: 50%; border-radius: 10px;">
+    
+    <label for="name"><strong>Full Name:</strong></label><br>
+    <input type="text" id="name" name="name" required style="width: 100%; padding: 10px;"><br><br>
+
+    <label for="fatherName"><strong>Father's Name:</strong></label><br>
+    <input type="text" id="fatherName" name="fatherName" required style="width: 100%; padding: 10px;"><br><br>
+
+    <label for="motherName"><strong>Mother's Name:</strong></label><br>
+    <input type="text" id="motherName" name="motherName" required style="width: 100%; padding: 10px;"><br><br>
+
+    <label for="phone"><strong>Phone Number:</strong></label><br>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter 10-digit number" required style="width: 100%; padding: 10px;"><br><br>
+
+    <label for="address"><strong>Address:</strong></label><br>
+    <textarea id="address" name="address" rows="3" required style="width: 100%; padding: 10px;"></textarea><br><br>
+
+    <label for="pincode"><strong>Pin Code:</strong></label><br>
+    <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" placeholder="6-digit PIN" required style="width: 100%; padding: 10px;"><br><br>
+
+    <label for="age"><strong>Age:</strong></label><br>
+    <select id="age" name="age" required style="width: 100%; padding: 10px;">
+      <option value="">--Select Age--</option>
+      <!-- Sample options -->
+      <option>18</option><option>19</option><option>20</option><option>21</option>
+      <option>22</option><option>23</option><option>24</option><option>25</option>
+    </select><br><br>
+
+    <label for="gender"><strong>Gender:</strong></label><br>
+    <select id="gender" name="gender" required style="width: 100%; padding: 10px;">
+      <option value="">--Select Gender--</option>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select><br><br>
+
+    <button type="submit" style="background-color: blueviolet; color: white; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer;">
+      Submit
+    </button>
+
+  </form>
+
+</body>
+</html>
